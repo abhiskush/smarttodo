@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src 'self'; script-src 'self'; img-src https:;"
+    />
+    <title>SmartTodo</title>
+    <link href="{{styleUri}}" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">
+        <span id="app-name">SmartTodo</span>
+        <span id="stats">
+          (Completed: <span id="completedCount"></span>, Incomplete:
+          <span id="incompleteCount"></span>)
+        </span>
+      </h1>
+
+      <div class="input-section">
+        <input
+          type="text"
+          id="newTodoInput"
+          class="new-todo-input"
+          placeholder="Add a new todo..."
+        />
+        <select id="prioritySelect">
+          <option value="Low">Low</option>
+          <option value="Medium" selected>Medium</option>
+          <option value="High">High</option>
+          <option value="Urgent">Urgent</option>
+          <option value="Critical">Critical</option>
+        </select>
+        <button id="addBtn">Add Todo</button>
+      </div>
+
+      <div class="filter-section">
+        <label>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polygon
+              points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"
+            ></polygon>
+          </svg>
+          <select id="completionFilter">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="incomplete">Incomplete</option>
+          </select>
+        </label>
+        <input type="text" id="titleFilter" placeholder="Search by title..." />
+        <select id="priorityFilter">
+          <option value="all">All Priorities</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+          <option value="Urgent">Urgent</option>
+          <option value="Critical">Critical</option>
+        </select>
+      </div>
+
+      <div id="todoContainer"></div>
+    </div>
+
+    <div id="confirmModal" class="confirm-modal">
+      <div class="confirm-modal-content">
+        <p id="confirmMessage"></p>
+        <div class="confirm-modal-buttons">
+          <button id="cancelBtn" class="cancel-btn">Cancel</button>
+          <button id="confirmBtn" class="confirm-btn">Confirm</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="{{scriptUri}}"></script>
+  </body>
+</html>
