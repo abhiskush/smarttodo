@@ -4,6 +4,12 @@ All notable changes to the "SmartTodo" extension will be documented in this file
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/), and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.1.1] - 2026-03-28
+
+### Changed
+- Updated priority colors for better visual distinction
+- Improved UI contrast with adjusted background opacity
+
 ## [0.1.0] - 2026-03-21
 
 ### Added

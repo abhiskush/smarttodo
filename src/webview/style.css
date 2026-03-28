@@ -1,14 +1,14 @@
 :root {
-  --color-critical: rgba(255, 59, 48, 1);
-  --color-critical-bg: rgba(255, 59, 48, 0.15);
+  --color-critical: rgba(255, 119, 205, 1);
+  --color-critical-bg: rgba(255, 119, 205, 0.05);
   --color-urgent: rgba(255, 149, 0, 1);
-  --color-urgent-bg: rgba(255, 149, 0, 0.15);
-  --color-high: rgb(31, 122, 113);
-  --color-high-bg: rgba(31, 122, 113, 0.15);
-  --color-medium: rgba(76, 175, 80, 1);
-  --color-medium-bg: rgba(76, 175, 80, 0.15);
-  --color-low: rgba(33, 150, 243, 1);
-  --color-low-bg: rgba(33, 150, 243, 0.15);
+  --color-urgent-bg: rgba(255, 149, 0, 0.05);
+  --color-high: rgba(0, 207, 255, 1);
+  --color-high-bg: rgba(0, 207, 255, 0.05);
+  --color-medium: rgba(34, 209, 42, 1);
+  --color-medium-bg: rgba(34, 209, 42, 0.05);
+  --color-low: rgba(201, 217, 40, 1);
+  --color-low-bg: rgba(201, 217, 40, 0.05);
 }
 
 * {
